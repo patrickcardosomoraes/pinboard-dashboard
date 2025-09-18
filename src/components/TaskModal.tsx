@@ -7,7 +7,7 @@ interface TaskModalProps {
   isOpen: boolean;
   onClose: () => void;
   onSave: (task: Omit<Task, 'id' | 'createdAt'>) => void;
-  task?: Task;
+  task?: Task | null;
 }
 
 export default function TaskModal({ isOpen, onClose, onSave, task }: TaskModalProps) {

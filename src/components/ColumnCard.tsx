@@ -22,13 +22,13 @@ export default function ColumnCard({
     id: column.id,
   });
 
-  const columnColors = {
+  const columnColors: Record<string, string> = {
     'todo': 'bg-gradient-to-br from-slate-50 to-slate-100 border-slate-200',
     'doing': 'bg-gradient-to-br from-blue-50 to-blue-100 border-blue-200', 
     'done': 'bg-gradient-to-br from-green-50 to-green-100 border-green-200'
   };
 
-  const buttonColors = {
+  const buttonColors: Record<string, string> = {
     'todo': 'border-slate-300 text-slate-600 hover:border-slate-400 hover:bg-slate-50',
     'doing': 'border-blue-300 text-blue-600 hover:border-blue-400 hover:bg-blue-50',
     'done': 'border-green-300 text-green-600 hover:border-green-400 hover:bg-green-50'

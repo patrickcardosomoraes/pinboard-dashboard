@@ -91,10 +91,7 @@ export default function KanbanBoard() {
     if (activeColumn.id === overColumn.id) return;
 
     setColumns((columns) => {
-      const activeItems = activeColumn.tasks;
       const overItems = overColumn.tasks;
-
-      const activeIndex = activeItems.findIndex((task) => task.id === activeId);
       const overIndex = overItems.findIndex((task) => task.id === overId);
 
       let newIndex;
